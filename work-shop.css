@@ -1,0 +1,302 @@
+/* Start Global */
+:root {
+    --main-color: rgba(0, 0, 0, 0.9);
+    --second-color: rgb(230, 95, 120);
+    --pop-bg: #F1F1f1;
+  }
+  body {
+    font-family: "Nunito Sans", sans-serif;
+  }
+  html {
+    scroll-padding-top: 75px;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    font-family: "Montserrat", sans-serif !important;
+  }
+  .second-color{
+    color: var(--second-color) !important;
+  }
+  .second-bg-color{
+    background-color: var(--second-color) !important;
+  }
+  section{
+    padding-block: 100px;
+  }
+  .section-bg{
+    background-color: var(--pop-bg);
+  }
+  .max-w-500{
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  /* End Global */
+  nav{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  nav .nav-link.active{
+    color: var(--second-color)!important;
+    font-weight: 700;
+  }
+  nav .nav-link{
+    color: var(--main-color);
+    transition: color 0.3s ease-in-out;
+  }
+  nav .nav-link:hover{
+    color: var(--second-color) !important;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Start Header */
+  header {
+    background-image:linear-gradient(rgba(0 ,0 ,0 , 0.5) , rgba(0 ,0 ,0 , 0.5) ) ,url(image/imgs/header-bg.jpg);
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+.section-sub{
+    max-width: 500px;
+}
+.home-contant p.section-sub{
+    color: rgba(255 ,255 ,255 , 0.5) !important;
+}
+.btn-cv{
+    padding: 1rem 3rem;
+}
+.btn-cv:hover{
+    background-color: white;
+    color: var(--main-color) !important;
+}
+
+header .scroll {
+  width: 40px;
+  height: 70px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  animation: scroll 1s infinite;
+  -webkit-animation: scroll 1s infinite;
+}
+header .scroll::after {
+  content: '';
+  width: 4px;
+  height: 20%;
+  bottom: 20px;
+  position: absolute;
+  background-color: white;
+}
+@keyframes scroll {
+  10%{
+    bottom:30px;
+  }
+  20% {
+    bottom: 50px;
+  }
+  50% {
+    bottom: 80px;
+  }
+  70% {
+    bottom: 60px;
+  }
+  90% {
+    bottom: 30px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
+.home-contant h1::after {
+  content: "|";
+  animation: typing 3s infinite alternate;
+  -webkit-animation: typing 3s infinite alternate;
+}
+@keyframes typing {
+  2.5% {
+    content: " D|";
+  }
+  5% {
+    content: " De|";
+  }
+  7.5% {
+    content: " Dev|";
+  }
+  10% {
+    content: " Deve|";
+  }
+  12.5% {
+    content: " Devel|";
+  }
+  15% {
+    content: " Develo|";
+  }
+  17.5% {
+    content: " Develop|";
+  }
+  20% {
+    content: " Developm|";
+  }
+  22.5% {
+    content: " Developme|";
+  }
+  25% {
+    content: " Developmen|";
+  }
+  27.5% {
+    content: " Development|";
+  }
+  30% {
+    content: " Developmen|";
+  }
+  32.5% {
+    content: " Developme|";
+  }
+  35% {
+    content: " Developm|";
+  }
+  37.5% {
+    content: " Develop|";
+  }
+  40% {
+    content: " Develo|";
+  }
+  42.5% {
+    content: " Devel|";
+  }
+  45% {
+    content: " Deve|";
+  }
+  47.5% {
+    content: " Dev|";
+  }
+  50% {
+    content: " De|";
+  }
+  52.5% {
+    content: " Des|";
+  }
+  55% {
+    content: " Desi|";
+  }
+  57.5% {
+    content: " Desig|";
+  }
+  60% {
+    content: " Design|";
+  }
+  62.5% {
+    content: " Designe|";
+  }
+  65% {
+    content: " Designer|";
+  }
+  67.5% {
+    content: " Designe|";
+  }
+  70% {
+    content: " Design|";
+  }
+  72.5% {
+    content: " Desig|";
+  }
+  75% {
+    content: " Desi|";
+  }
+  77.5% {
+    content: " Des|";
+  }
+  80% {
+    content: " De|";
+  }
+  82.5% {
+    content: " Dev|";
+  }
+  85% {
+    content: " Deve|";
+  }
+  87.5% {
+    content: " Devel|";
+  }
+  90% {
+    content: " Develo|";
+  }
+  92.5% {
+    content: " Develop|";
+  }
+  95% {
+    content: " Develope|";
+  }
+  97.5% {
+    content: " Developer|";
+  }
+  100% {
+    content: " Developer|";
+  }
+}
+.setting:hover i{
+  background-color: aqua !important;
+  color: blueviolet !important;
+}
+  /* End Header */
+  
+  /* Start About */
+  #About .social li a{
+    height: 40px;
+    width: 40px;
+    transition:all 0.3s;
+  }
+  #About .social li a:hover{
+    color: var(--second-color) !important;
+  border-color: var(--second-color) !important;
+  }
+  /* End About */
+  
+  /* Start Services */
+  #slider img{
+    width: 80px !important;
+  }
+  .myp{
+    font-size: 17px;
+  }
+  /* end ser */
+  
+  /* Start portfolio */
+  #portfolio .box img{
+    transition: 0.5s;
+  }
+  #portfolio .box:hover img{
+    transform: scale(1.3);
+  }
+  #portfolio .box .layer{
+    background-color: #00000091 !important;
+    color: white !important;
+    transition: 0.5s;
+  }
+  #portfolio .box:hover .layer{
+    opacity: 1 !important;
+  }
+  #portfolio .box .layer .text{
+    top: 300%;
+    transform: translateY(-50%);
+    transition: all 0.5s;
+    transition-delay: .2s;
+  }
+  #portfolio .box:hover .layer .text{
+    top: 50%;
+  }
+
+  #portfolio ul .nav-link.active{
+    background-color: var(--second-color);
+    color: white !important;
+    border-radius: 20px;
+  }
+  /* End portfolio */
+  
+  /* Start Contact */
+#Contact .form-control:focus{
+  box-shadow: 0 0 5px 2px var(--second-color) ;
+  border-color: var(--second-color);
+}
